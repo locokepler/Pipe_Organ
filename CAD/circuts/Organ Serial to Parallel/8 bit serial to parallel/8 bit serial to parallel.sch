@@ -1,0 +1,744 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 74xx:74HC595 U1
+U 1 1 5D1725A9
+P 2600 3450
+F 0 "U1" H 2600 4231 50  0000 C CNN
+F 1 "74HC595" H 2600 4140 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm" H 2600 3450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 2600 3450 50  0001 C CNN
+	1    2600 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:IRLZ44N Q1
+U 1 1 5D173357
+P 3900 3350
+F 0 "Q1" V 4243 3350 50  0000 C CNN
+F 1 "IRLZ44N" V 4152 3350 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 4150 3275 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irlz44n.pdf" H 3900 3350 50  0001 L CNN
+	1    3900 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Transistor_FET:IRLZ44N Q3
+U 1 1 5D1754A6
+P 4900 3350
+F 0 "Q3" V 5243 3350 50  0000 C CNN
+F 1 "IRLZ44N" V 5152 3350 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 5150 3275 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irlz44n.pdf" H 4900 3350 50  0001 L CNN
+	1    4900 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Transistor_FET:IRLZ44N Q4
+U 1 1 5D176D99
+P 5400 3350
+F 0 "Q4" V 5743 3350 50  0000 C CNN
+F 1 "IRLZ44N" V 5652 3350 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 5650 3275 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irlz44n.pdf" H 5400 3350 50  0001 L CNN
+	1    5400 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Transistor_FET:IRLZ44N Q5
+U 1 1 5D1773CE
+P 5900 3350
+F 0 "Q5" V 6243 3350 50  0000 C CNN
+F 1 "IRLZ44N" V 6152 3350 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 6150 3275 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irlz44n.pdf" H 5900 3350 50  0001 L CNN
+	1    5900 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Transistor_FET:IRLZ44N Q6
+U 1 1 5D177B7F
+P 6400 3350
+F 0 "Q6" V 6743 3350 50  0000 C CNN
+F 1 "IRLZ44N" V 6652 3350 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 6650 3275 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irlz44n.pdf" H 6400 3350 50  0001 L CNN
+	1    6400 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Transistor_FET:IRLZ44N Q7
+U 1 1 5D178107
+P 6900 3350
+F 0 "Q7" V 7243 3350 50  0000 C CNN
+F 1 "IRLZ44N" V 7152 3350 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 7150 3275 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irlz44n.pdf" H 6900 3350 50  0001 L CNN
+	1    6900 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Transistor_FET:IRLZ44N Q8
+U 1 1 5D178781
+P 7400 3350
+F 0 "Q8" V 7743 3350 50  0000 C CNN
+F 1 "IRLZ44N" V 7652 3350 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 7650 3275 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irlz44n.pdf" H 7400 3350 50  0001 L CNN
+	1    7400 3350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4400 3600 4400 3550
+Wire Wire Line
+	4900 3550 4900 3650
+Wire Wire Line
+	5400 3700 5400 3550
+Wire Wire Line
+	5900 3750 5900 3550
+Wire Wire Line
+	6900 3850 6900 3550
+Wire Wire Line
+	6400 3800 6400 3550
+Wire Wire Line
+	7400 3900 3000 3900
+Wire Wire Line
+	3000 3900 3000 3750
+Wire Wire Line
+	3000 3650 3050 3650
+Wire Wire Line
+	3050 3650 3050 3850
+Wire Wire Line
+	3050 3850 6900 3850
+Wire Wire Line
+	6400 3800 3100 3800
+Wire Wire Line
+	3100 3800 3100 3550
+Wire Wire Line
+	3100 3550 3000 3550
+Wire Wire Line
+	3000 3450 3150 3450
+Wire Wire Line
+	3150 3450 3150 3750
+Wire Wire Line
+	3150 3750 5900 3750
+Wire Wire Line
+	5400 3700 3200 3700
+Wire Wire Line
+	3200 3700 3200 3350
+Wire Wire Line
+	3200 3350 3000 3350
+Wire Wire Line
+	3000 3250 3250 3250
+Wire Wire Line
+	3250 3250 3250 3650
+Wire Wire Line
+	3250 3650 4900 3650
+Wire Wire Line
+	4400 3600 3300 3600
+Wire Wire Line
+	3300 3600 3300 3150
+Wire Wire Line
+	3300 3150 3000 3150
+Wire Wire Line
+	3000 3050 3350 3050
+Wire Wire Line
+	3350 3050 3350 3550
+Wire Wire Line
+	3350 3550 3900 3550
+Wire Wire Line
+	3000 3950 3000 4100
+Wire Wire Line
+	3000 4100 3100 4100
+$Comp
+L Connector:Conn_01x01_Female O2
+U 1 1 5D17FEA5
+P 3300 4100
+F 0 "O2" H 3328 4126 50  0000 L CNN
+F 1 "H'" H 3328 4035 50  0000 L CNN
+F 2 "Connector_Wire:SolderWirePad_1x01_Drill2.5mm" H 3300 4100 50  0001 C CNN
+F 3 "~" H 3300 4100 50  0001 C CNN
+	1    3300 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:IRLZ44N Q2
+U 1 1 5D174175
+P 4400 3350
+F 0 "Q2" V 4743 3350 50  0000 C CNN
+F 1 "IRLZ44N" V 4652 3350 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 4650 3275 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irlz44n.pdf" H 4400 3350 50  0001 L CNN
+	1    4400 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small_US R1
+U 1 1 5D187261
+P 4100 3450
+F 0 "R1" H 4168 3496 50  0000 L CNN
+F 1 "10k Ohm" H 4168 3405 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 4100 3450 50  0001 C CNN
+F 3 "~" H 4100 3450 50  0001 C CNN
+	1    4100 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R2
+U 1 1 5D187BA2
+P 4600 3450
+F 0 "R2" H 4668 3496 50  0000 L CNN
+F 1 "10k Ohm" H 4668 3405 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 4600 3450 50  0001 C CNN
+F 3 "~" H 4600 3450 50  0001 C CNN
+	1    4600 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R3
+U 1 1 5D187F61
+P 5100 3450
+F 0 "R3" H 5168 3496 50  0000 L CNN
+F 1 "10k Ohm" H 5168 3405 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 5100 3450 50  0001 C CNN
+F 3 "~" H 5100 3450 50  0001 C CNN
+	1    5100 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R4
+U 1 1 5D188080
+P 5600 3450
+F 0 "R4" H 5668 3496 50  0000 L CNN
+F 1 "10k Ohm" H 5668 3405 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 5600 3450 50  0001 C CNN
+F 3 "~" H 5600 3450 50  0001 C CNN
+	1    5600 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R5
+U 1 1 5D188716
+P 6100 3450
+F 0 "R5" H 6168 3496 50  0000 L CNN
+F 1 "10k Ohm" H 6168 3405 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 6100 3450 50  0001 C CNN
+F 3 "~" H 6100 3450 50  0001 C CNN
+	1    6100 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R6
+U 1 1 5D188766
+P 6600 3450
+F 0 "R6" H 6668 3496 50  0000 L CNN
+F 1 "10k Ohm" H 6668 3405 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 6600 3450 50  0001 C CNN
+F 3 "~" H 6600 3450 50  0001 C CNN
+	1    6600 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R7
+U 1 1 5D188979
+P 7100 3450
+F 0 "R7" H 7168 3496 50  0000 L CNN
+F 1 "10k Ohm" H 7168 3405 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 7100 3450 50  0001 C CNN
+F 3 "~" H 7100 3450 50  0001 C CNN
+	1    7100 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R8
+U 1 1 5D188A25
+P 7600 3450
+F 0 "R8" H 7668 3496 50  0000 L CNN
+F 1 "10k Ohm" H 7668 3405 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 7600 3450 50  0001 C CNN
+F 3 "~" H 7600 3450 50  0001 C CNN
+	1    7600 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 3550 7400 3900
+Wire Wire Line
+	7600 3550 7400 3550
+Connection ~ 7400 3550
+Wire Wire Line
+	7600 3350 7600 3250
+Wire Wire Line
+	7100 3250 7100 3350
+Wire Wire Line
+	7100 3550 6900 3550
+Connection ~ 6900 3550
+Wire Wire Line
+	6600 3550 6400 3550
+Connection ~ 6400 3550
+Wire Wire Line
+	6600 3350 6600 3250
+Wire Wire Line
+	6100 3250 6100 3350
+Wire Wire Line
+	6100 3550 5900 3550
+Connection ~ 5900 3550
+Wire Wire Line
+	5600 3550 5400 3550
+Connection ~ 5400 3550
+Wire Wire Line
+	5600 3350 5600 3250
+Wire Wire Line
+	5100 3250 5100 3350
+Wire Wire Line
+	5100 3550 4900 3550
+Connection ~ 4900 3550
+Wire Wire Line
+	4600 3550 4400 3550
+Connection ~ 4400 3550
+Wire Wire Line
+	4600 3350 4600 3250
+Wire Wire Line
+	4100 3550 3900 3550
+Connection ~ 3900 3550
+Wire Wire Line
+	4100 3350 4100 3250
+$Comp
+L pspice:DIODE D1
+U 1 1 5D193728
+P 3900 2850
+F 0 "D1" H 3900 2585 50  0000 C CNN
+F 1 "DIODE" H 3900 2676 50  0000 C CNN
+F 2 "Diode_THT:D_DO-15_P3.81mm_Vertical_AnodeUp" H 3900 2850 50  0001 C CNN
+F 3 "~" H 3900 2850 50  0001 C CNN
+	1    3900 2850
+	-1   0    0    1   
+$EndComp
+$Comp
+L pspice:DIODE D2
+U 1 1 5D193FBA
+P 4400 2850
+F 0 "D2" H 4400 2585 50  0000 C CNN
+F 1 "DIODE" H 4400 2676 50  0000 C CNN
+F 2 "Diode_THT:D_DO-15_P3.81mm_Vertical_AnodeUp" H 4400 2850 50  0001 C CNN
+F 3 "~" H 4400 2850 50  0001 C CNN
+	1    4400 2850
+	-1   0    0    1   
+$EndComp
+$Comp
+L pspice:DIODE D3
+U 1 1 5D19431D
+P 4900 2850
+F 0 "D3" H 4900 2585 50  0000 C CNN
+F 1 "DIODE" H 4900 2676 50  0000 C CNN
+F 2 "Diode_THT:D_DO-15_P3.81mm_Vertical_AnodeUp" H 4900 2850 50  0001 C CNN
+F 3 "~" H 4900 2850 50  0001 C CNN
+	1    4900 2850
+	-1   0    0    1   
+$EndComp
+$Comp
+L pspice:DIODE D4
+U 1 1 5D194418
+P 5400 2850
+F 0 "D4" H 5400 2585 50  0000 C CNN
+F 1 "DIODE" H 5400 2676 50  0000 C CNN
+F 2 "Diode_THT:D_DO-15_P3.81mm_Vertical_AnodeUp" H 5400 2850 50  0001 C CNN
+F 3 "~" H 5400 2850 50  0001 C CNN
+	1    5400 2850
+	-1   0    0    1   
+$EndComp
+$Comp
+L pspice:DIODE D5
+U 1 1 5D1945CD
+P 5900 2850
+F 0 "D5" H 5900 2585 50  0000 C CNN
+F 1 "DIODE" H 5900 2676 50  0000 C CNN
+F 2 "Diode_THT:D_DO-15_P3.81mm_Vertical_AnodeUp" H 5900 2850 50  0001 C CNN
+F 3 "~" H 5900 2850 50  0001 C CNN
+	1    5900 2850
+	-1   0    0    1   
+$EndComp
+$Comp
+L pspice:DIODE D6
+U 1 1 5D1946F6
+P 6400 2850
+F 0 "D6" H 6400 2585 50  0000 C CNN
+F 1 "DIODE" H 6400 2676 50  0000 C CNN
+F 2 "Diode_THT:D_DO-15_P3.81mm_Vertical_AnodeUp" H 6400 2850 50  0001 C CNN
+F 3 "~" H 6400 2850 50  0001 C CNN
+	1    6400 2850
+	-1   0    0    1   
+$EndComp
+$Comp
+L pspice:DIODE D7
+U 1 1 5D1947B9
+P 6900 2850
+F 0 "D7" H 6900 2585 50  0000 C CNN
+F 1 "DIODE" H 6900 2676 50  0000 C CNN
+F 2 "Diode_THT:D_DO-15_P3.81mm_Vertical_AnodeUp" H 6900 2850 50  0001 C CNN
+F 3 "~" H 6900 2850 50  0001 C CNN
+	1    6900 2850
+	-1   0    0    1   
+$EndComp
+$Comp
+L pspice:DIODE D8
+U 1 1 5D194A5B
+P 7400 2850
+F 0 "D8" H 7400 2585 50  0000 C CNN
+F 1 "DIODE" H 7400 2676 50  0000 C CNN
+F 2 "Diode_THT:D_DO-15_P3.81mm_Vertical_AnodeUp" H 7400 2850 50  0001 C CNN
+F 3 "~" H 7400 2850 50  0001 C CNN
+	1    7400 2850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7600 3250 7600 2850
+Connection ~ 7600 3250
+Wire Wire Line
+	7200 2850 7200 3250
+Wire Wire Line
+	7100 2850 7100 3250
+Connection ~ 7100 3250
+Wire Wire Line
+	6700 2850 6700 3250
+Wire Wire Line
+	6200 2850 6200 3250
+Wire Wire Line
+	6600 2850 6600 3250
+Connection ~ 6600 3250
+Wire Wire Line
+	6100 2850 6100 3250
+Connection ~ 6100 3250
+Wire Wire Line
+	5700 2850 5700 3250
+Wire Wire Line
+	5600 3250 5600 2850
+Connection ~ 5600 3250
+Wire Wire Line
+	5200 2850 5200 3250
+Wire Wire Line
+	5100 2850 5100 3250
+Connection ~ 5100 3250
+Wire Wire Line
+	4700 2850 4700 3250
+Wire Wire Line
+	4600 2850 4600 3250
+Connection ~ 4600 3250
+Wire Wire Line
+	4200 3250 4200 2850
+Wire Wire Line
+	4100 2850 4100 3250
+Connection ~ 4100 3250
+Wire Wire Line
+	3700 3250 3700 2850
+$Comp
+L Connector:Conn_01x01_Female V1
+U 1 1 5D1A6507
+P 3700 2300
+F 0 "V1" V 3638 2212 50  0000 R CNN
+F 1 "Valve 1" V 3547 2212 50  0000 R CNN
+F 2 "Connector_Wire:SolderWirePad_1x01_Drill2.5mm" H 3700 2300 50  0001 C CNN
+F 3 "~" H 3700 2300 50  0001 C CNN
+	1    3700 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female V2
+U 1 1 5D1C2E0B
+P 4200 2300
+F 0 "V2" V 4138 2212 50  0000 R CNN
+F 1 "Valve 2" V 4047 2212 50  0000 R CNN
+F 2 "Connector_Wire:SolderWirePad_1x01_Drill2.5mm" H 4200 2300 50  0001 C CNN
+F 3 "~" H 4200 2300 50  0001 C CNN
+	1    4200 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female V3
+U 1 1 5D1C4924
+P 4700 2300
+F 0 "V3" V 4638 2212 50  0000 R CNN
+F 1 "Valve 3" V 4547 2212 50  0000 R CNN
+F 2 "Connector_Wire:SolderWirePad_1x01_Drill2.5mm" H 4700 2300 50  0001 C CNN
+F 3 "~" H 4700 2300 50  0001 C CNN
+	1    4700 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female V4
+U 1 1 5D1C4D41
+P 5200 2300
+F 0 "V4" V 5138 2212 50  0000 R CNN
+F 1 "Valve 4" V 5047 2212 50  0000 R CNN
+F 2 "Connector_Wire:SolderWirePad_1x01_Drill2.5mm" H 5200 2300 50  0001 C CNN
+F 3 "~" H 5200 2300 50  0001 C CNN
+	1    5200 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female V5
+U 1 1 5D1C4EC0
+P 5700 2300
+F 0 "V5" V 5638 2212 50  0000 R CNN
+F 1 "Valve 5" V 5547 2212 50  0000 R CNN
+F 2 "Connector_Wire:SolderWirePad_1x01_Drill2.5mm" H 5700 2300 50  0001 C CNN
+F 3 "~" H 5700 2300 50  0001 C CNN
+	1    5700 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female V6
+U 1 1 5D1C5252
+P 6200 2300
+F 0 "V6" V 6138 2212 50  0000 R CNN
+F 1 "Valve 6" V 6047 2212 50  0000 R CNN
+F 2 "Connector_Wire:SolderWirePad_1x01_Drill2.5mm" H 6200 2300 50  0001 C CNN
+F 3 "~" H 6200 2300 50  0001 C CNN
+	1    6200 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female V7
+U 1 1 5D1C5463
+P 6700 2300
+F 0 "V7" V 6638 2212 50  0000 R CNN
+F 1 "Valve 7" V 6547 2212 50  0000 R CNN
+F 2 "Connector_Wire:SolderWirePad_1x01_Drill2.5mm" H 6700 2300 50  0001 C CNN
+F 3 "~" H 6700 2300 50  0001 C CNN
+	1    6700 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female V8
+U 1 1 5D1C57FA
+P 7200 2300
+F 0 "V8" V 7138 2212 50  0000 R CNN
+F 1 "Valve 8" V 7047 2212 50  0000 R CNN
+F 2 "Connector_Wire:SolderWirePad_1x01_Drill2.5mm" H 7200 2300 50  0001 C CNN
+F 3 "~" H 7200 2300 50  0001 C CNN
+	1    7200 2300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3700 2500 3700 2850
+Connection ~ 3700 2850
+Wire Wire Line
+	4100 2850 4100 2200
+Wire Wire Line
+	4100 2200 4600 2200
+Connection ~ 4100 2850
+Wire Wire Line
+	4200 2500 4200 2850
+Connection ~ 4200 2850
+Wire Wire Line
+	4600 2850 4600 2200
+Connection ~ 4600 2850
+Connection ~ 4600 2200
+Wire Wire Line
+	4600 2200 5100 2200
+Wire Wire Line
+	4700 2500 4700 2850
+Connection ~ 4700 2850
+Wire Wire Line
+	5100 2850 5100 2200
+Connection ~ 5100 2850
+Connection ~ 5100 2200
+Wire Wire Line
+	5100 2200 5600 2200
+Wire Wire Line
+	5200 2500 5200 2850
+Connection ~ 5200 2850
+Wire Wire Line
+	5600 2850 5600 2200
+Connection ~ 5600 2850
+Connection ~ 5600 2200
+Wire Wire Line
+	5600 2200 6100 2200
+Wire Wire Line
+	5700 2500 5700 2850
+Connection ~ 5700 2850
+Wire Wire Line
+	6100 2850 6100 2200
+Connection ~ 6100 2850
+Connection ~ 6100 2200
+Wire Wire Line
+	6100 2200 6600 2200
+Wire Wire Line
+	6200 2500 6200 2850
+Connection ~ 6200 2850
+Wire Wire Line
+	6600 2850 6600 2200
+Connection ~ 6600 2850
+Connection ~ 6600 2200
+Wire Wire Line
+	6600 2200 7100 2200
+Wire Wire Line
+	6700 2500 6700 2850
+Connection ~ 6700 2850
+Wire Wire Line
+	7100 2850 7100 2200
+Connection ~ 7100 2850
+Connection ~ 7100 2200
+Wire Wire Line
+	7100 2200 7600 2200
+Wire Wire Line
+	7200 2500 7200 2850
+Connection ~ 7200 2850
+Wire Wire Line
+	7600 2850 7600 2200
+Connection ~ 7600 2850
+Connection ~ 7600 2200
+Wire Wire Line
+	7600 2200 8100 2200
+Wire Wire Line
+	2600 4150 2600 4300
+Wire Wire Line
+	2600 4300 3100 4300
+Wire Wire Line
+	8100 2200 8100 4300
+Wire Wire Line
+	2200 3650 2200 4300
+Wire Wire Line
+	2200 4300 2600 4300
+Connection ~ 2600 4300
+Wire Wire Line
+	2600 2850 2300 2850
+Wire Wire Line
+	2200 3050 2000 3050
+Wire Wire Line
+	2000 3050 2000 2400
+Wire Wire Line
+	2200 3250 1700 3250
+Wire Wire Line
+	1700 3250 1700 2400
+Wire Wire Line
+	2200 3350 1400 3350
+Wire Wire Line
+	1400 3350 1400 2400
+Wire Wire Line
+	2200 3550 1100 3550
+Wire Wire Line
+	1100 3550 1100 2400
+$Comp
+L Connector:Conn_01x01_Female I1
+U 1 1 5D1F9FAB
+P 2300 2200
+F 0 "I1" V 2238 2112 50  0000 R CNN
+F 1 "+5 V" V 2147 2112 50  0000 R CNN
+F 2 "Connector_Wire:SolderWirePad_1x01_Drill2.5mm" H 2300 2200 50  0001 C CNN
+F 3 "~" H 2300 2200 50  0001 C CNN
+	1    2300 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+1V5 #PWR0101
+U 1 1 5D1FB2BD
+P 2300 2500
+F 0 "#PWR0101" H 2300 2350 50  0001 C CNN
+F 1 "+1V5" V 2315 2628 50  0000 L CNN
+F 2 "" H 2300 2500 50  0001 C CNN
+F 3 "" H 2300 2500 50  0001 C CNN
+	1    2300 2500
+	0    1    1    0   
+$EndComp
+Connection ~ 2300 2500
+Wire Wire Line
+	2300 2500 2300 2400
+Wire Wire Line
+	2300 2850 2300 2600
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5D1FD0A3
+P 2300 2600
+F 0 "#FLG0101" H 2300 2675 50  0001 C CNN
+F 1 "PWR_FLAG" V 2300 2728 50  0000 L CNN
+F 2 "" H 2300 2600 50  0001 C CNN
+F 3 "~" H 2300 2600 50  0001 C CNN
+	1    2300 2600
+	0    1    1    0   
+$EndComp
+Connection ~ 2300 2600
+Wire Wire Line
+	2300 2600 2300 2500
+$Comp
+L Connector:Conn_01x01_Female I3
+U 1 1 5D1FD8E6
+P 1100 2200
+F 0 "I3" V 1038 2112 50  0000 R CNN
+F 1 "RClock" V 947 2112 50  0000 R CNN
+F 2 "Connector_Wire:SolderWirePad_1x01_Drill2.5mm" H 1100 2200 50  0001 C CNN
+F 3 "~" H 1100 2200 50  0001 C CNN
+	1    1100 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female I5
+U 1 1 5D1FE51E
+P 1400 2200
+F 0 "I5" V 1338 2112 50  0000 R CNN
+F 1 "SRClear" V 1247 2112 50  0000 R CNN
+F 2 "Connector_Wire:SolderWirePad_1x01_Drill2.5mm" H 1400 2200 50  0001 C CNN
+F 3 "~" H 1400 2200 50  0001 C CNN
+	1    1400 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female I4
+U 1 1 5D1FE568
+P 1700 2200
+F 0 "I4" V 1638 2112 50  0000 R CNN
+F 1 "SRClock" V 1547 2112 50  0000 R CNN
+F 2 "Connector_Wire:SolderWirePad_1x01_Drill2.5mm" H 1700 2200 50  0001 C CNN
+F 3 "~" H 1700 2200 50  0001 C CNN
+	1    1700 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female I2
+U 1 1 5D1FE6C3
+P 2000 2200
+F 0 "I2" V 1938 2112 50  0000 R CNN
+F 1 "Serial" V 1847 2112 50  0000 R CNN
+F 2 "Connector_Wire:SolderWirePad_1x01_Drill2.5mm" H 2000 2200 50  0001 C CNN
+F 3 "~" H 2000 2200 50  0001 C CNN
+	1    2000 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5D2009EB
+P 2600 4300
+F 0 "#FLG0102" H 2600 4375 50  0001 C CNN
+F 1 "PWR_FLAG" H 2600 4473 50  0000 C CNN
+F 2 "" H 2600 4300 50  0001 C CNN
+F 3 "~" H 2600 4300 50  0001 C CNN
+	1    2600 4300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female O1
+U 1 1 5D26BBEE
+P 3100 4500
+F 0 "O1" V 2946 4548 50  0000 L CNN
+F 1 "Ground" V 3037 4548 50  0000 L CNN
+F 2 "Connector_Wire:SolderWirePad_1x01_Drill2.5mm" H 3100 4500 50  0001 C CNN
+F 3 "~" H 3100 4500 50  0001 C CNN
+	1    3100 4500
+	0    1    1    0   
+$EndComp
+Connection ~ 3100 4300
+Wire Wire Line
+	3100 4300 8100 4300
+$EndSCHEMATC

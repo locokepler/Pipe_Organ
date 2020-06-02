@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "Organ Libraries")(type KiCad)(uri "${KIPRJMOD}/Organ Libraries.pretty")(options "")(descr ""))
+)
