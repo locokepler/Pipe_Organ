@@ -5,8 +5,7 @@
 //#include <pitchToNote.h>
 #include "valve_control.h"
 
-// here is the form of build_rank
-//void build_rank(rank* rank, byte valves, byte offset, byte serial, byte srclk, byte rclk);
+
 
 rank flutes; // defines a rank of pipes called flutes, this will get more clear definion later
 
