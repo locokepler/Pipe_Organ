@@ -33,5 +33,7 @@ void push_notes(rank* rank);
 
 void clear_notes(rank* rank);
 
+void build_rank(rank* rank, byte valves, byte offset, byte serial, byte srclk, byte rclk);
+
 
 #endif

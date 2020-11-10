@@ -2,6 +2,31 @@
 #include "Arduino.h"
 
 
+/* fills out a rank with the needed data, and sets up the pins associcated with it
+ *  rank is the given rank pointer that is being defined
+ *  valves: the number of valves in the rank
+ *  offset: the offset from midi 0 that the lowest note is
+ *  serial: the serial output pin
+ *  srclk: the shift register clock output pin
+ *  rclk: the register clock output pin (for updating output of shift register)
+ */
+void build_rank(rank* rank, byte valves, byte offset, byte serial, byte srclk, byte rclk)
+{
+  if (rank == NULL) {
+    return;
+  }
+  rank->valve_num = valves;
+  rank->offset = offset;
+  rank->serial = serial;
+  rank->srclk = srclk;
+  rank->rclk = rclk;
+  rank->head = NULL;
+  pinMode(serial, OUTPUT);
+  pinMode(srclk, OUTPUT);
+  pinMode(rclk, OUTPUT);
+}
+
+
 
 /*
  * sorted_insert:
@@ -83,7 +108,7 @@ void clear_notes(rank* rank) {
     remove_node(rank->head, rank->head->valve);
   }
 }
-
+// just defining these early becaues the code is at the bottom
 void set_valves(node* head, byte valve_num, byte serial, byte srclock, byte rclock);
 void step_in_low(byte serial, byte srclock);
 void step_in_high(byte serial, byte srclock);
@@ -96,6 +121,14 @@ void push_notes(rank* rank) {
   set_valves(rank->head, rank->valve_num, rank->serial, rank->srclk, rank->rclk);
 }
 
+/*
+ * sets the valves using a shift register for the outputs
+ * inputs: head of the list of notes to be triggered,
+ *  valve_num, the number of valves (in the rank), serial: the serial pin,
+ *  srclock: the shift register clock pin,
+ *  rclock: the register clock pin (update output)
+ *  runs using recusive logic, and is directly based on known working code from the uno
+  */
 void set_valves(node* head, byte valve_num, byte serial, byte srclock, byte rclock) {
   static byte current_pos = 0;
   if (head == NULL)
