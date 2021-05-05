@@ -10,12 +10,12 @@ struct _node{
 };
 
 /* rank defines a rank of pipes controlled together, as a single
-*  shift register. Stored in this is the number of valves in the
-*  rank, the offset (distance from the lowest note to midi note
-*  0) and the head pointer to the list of valves that should be
-*  on. Then it also has the values of the control pins of the
-*  rank
-*/
+ *  shift register. Stored in this is the number of valves in the
+ *  rank, the offset (distance from the lowest note to midi note
+ *  0) and the head pointer to the list of valves that should be
+ *  on. Then it also has the values of the control pins of the
+ *  rank
+ */
 struct _rank{
   byte valve_num;
   byte offset;
@@ -24,18 +24,6 @@ struct _rank{
   byte rclk;
   node* head;
 };
-
-/* organ structure holds a set of ranks for handling. To be used
- * for parallel data output to reduce the time spent in data output
- */
-
-typedef struct _organ organ;
-
-struct _organ{
-  rank* rank;
-  organ* next;
-};
-
 
 typedef struct _rank rank;
 
