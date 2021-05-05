@@ -1,6 +1,7 @@
 #include "valve_control.h"
 #include "Arduino.h"
 
+#define DELAY 10
 
 /* fills out a rank with the needed data, and sets up the pins associcated with it
  *  rank is the given rank pointer that is being defined
@@ -96,7 +97,7 @@ void note_read(rank* rank, byte note) {
   if (note < 0x80) {
     rank->head = sorted_insert(rank->head, rank->valve_num, effective_note);
   } else {
-    rank->head = remove_node(rank->head, effective_note);
+    rank->head = remove_node(rank->head, effective_note & 0x7F);
   }
 }
 
@@ -138,9 +139,9 @@ void set_valves(node* head, byte valve_num, byte serial, byte srclock, byte rclo
       step_in_low(serial, srclock); // fills out remainder of shift register
     }
     digitalWrite(rclock, HIGH); // update output of shift registers
-    delayMicroseconds(5);
+    delayMicroseconds(DELAY);
     digitalWrite(rclock, LOW);
-    delayMicroseconds(5);
+    delayMicroseconds(DELAY);
     current_pos = 0;
     return;
   }
@@ -159,19 +160,19 @@ void step_in_low(byte serial, byte srclock)
 {
   digitalWrite(serial, LOW);
   digitalWrite(srclock, HIGH);
-  delayMicroseconds(1);
+  delayMicroseconds(DELAY);
   digitalWrite(srclock, LOW);
-  delayMicroseconds(1);
+  delayMicroseconds(DELAY);
 }
 // puts a HIGH into the shift register
 void step_in_high(byte serial, byte srclock)
 {
-  delayMicroseconds(1);
+  delayMicroseconds(DELAY);
   digitalWrite(serial, HIGH);
-  delayMicroseconds(5);
+  delayMicroseconds(DELAY);
   digitalWrite(srclock, HIGH);
-  delayMicroseconds(5);
+  delayMicroseconds(DELAY);
   digitalWrite(srclock, LOW);
   digitalWrite(serial, LOW);
-  delayMicroseconds(1);
+  delayMicroseconds(DELAY);
 }
